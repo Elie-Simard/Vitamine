@@ -1,0 +1,49 @@
+/* CréerCompte.css */
+
+/* Image de fond */
+body.creerCompteBody {
+    margin: 0;
+    padding: 0;
+    background: url('../public/images/pharma.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Conteneur principal, l'encadreur blanc */
+.containerCreerCompte {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    max-width: 150%;
+    width: 500px;
+    margin: auto;
+    height: 80vh;
+    text-align: center;
+}
+
+/* Pour les champs de formulaire */
+.creerCompte-form-input {
+    margin: 20px 0;
+    font-size: 18px;
+    padding: 10px;
+    width: 120%;
+    max-width: 120%;
+    box-sizing: border-box;
+}
+
+/* Pour les liens boutons */
+.creerCompte-link-button {
+    margin-top: 20px;
+}
+
+/* Pour les étiquettes de case à cocher */
+.creerCompte-checkbox-label {
+    display: block;
+}

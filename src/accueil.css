@@ -1,0 +1,132 @@
+/* Accueil.css */
+
+/* ****BODY PRINCIPAL ********-> */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../public/images/pharma.png');
+}
+
+/* body de accueil (image de fond) */
+.accueil-body-container {
+    background: url('../public/images/pharma.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: center;
+    background-size: 150% 200%;
+}
+
+/* Conteneur principal, l'encadreur blanc */
+.accueil-container {
+    background-color: #BBE2EC;
+    display: flex;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+
+
+    justify-content: center;
+    align-items: center;
+
+    max-width: 150%;
+    width: 500px;
+    margin: auto;
+    height: 50vh;
+    text-align: center;
+}
+
+.accueil-logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.accueil-infos {
+    padding: 20px;
+    margin: 20px 100px;
+    text-align: left;
+}
+
+.accueil-button {
+    background-color: #0D9276;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 15px;
+    cursor: pointer;
+}
+
+.accueil-title {
+    font-family: cursive;
+    font-size: 36px;
+    font-weight: bold;
+    color: #0D9276;
+    margin: 10px 0;
+}
+
+.accueil-form-control {
+    margin: 10px 0;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.accueil-containerAccueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+
+.accueil-accueil {
+    height: 600px;
+    width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    text-align: center;
+}
+
+.accueil-accueil h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0D9276;
+    margin: 10px 0;
+}
+
+.accueil-addons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.accueil-addon-products {
+    display: flex;
+    justify-content: space-around;
+}
+
+.accueil-addon-product {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.accueil-social-buttons button {
+    margin: 5px;
+    padding: 1px 1px;
+    font-size: 12px;
+}

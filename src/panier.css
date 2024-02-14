@@ -1,0 +1,125 @@
+/* Panier.css */
+.containerPanier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    /* Hauteur de la vue */
+    text-align: center;
+}
+
+.panier {
+    height: 600px;
+    /* Hauteur du panier */
+    width: 600px;
+    /* Largeur du panier */
+    padding: 20px;
+    /* Espacement intérieur */
+    background-color: #fff;
+    /* Couleur de fond */
+    border-radius: 15px;
+    /* Bordures arrondies */
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    /* Ombre */
+    margin: 20px;
+    /* Espacement extérieur */
+}
+
+
+.panier h2 {
+    text-align: center;
+    /* Centrer le titre */
+}
+
+.panier ul {
+    list-style: none;
+    /* Supprimer les puces de liste */
+    padding: 0;
+}
+
+.panier li {
+    margin-bottom: 10px;
+    /* Espacement entre les éléments de liste */
+}
+
+.panier input[type="number"] {
+    width: 50px;
+    /* Largeur du champ de quantité */
+    margin-left: 10px;
+    /* Espacement à gauche */
+}
+
+.panier button {
+    margin-left: 10px;
+    /* Espacement à gauche */
+    background-color: #0D9276;
+    /* Couleur de fond du bouton */
+    color: #fff;
+    /* Couleur du texte du bouton */
+    border: none;
+    padding: 5px 10px;
+    /* Espacement intérieur du bouton */
+    border-radius: 5px;
+    /* Bordures arrondies */
+    cursor: pointer;
+}
+
+.miniLogo {
+    width: 50px;
+    /* Largeur du logo */
+    height: 50px;
+    /* Hauteur du logo */
+    display: block;
+    /* Afficher en tant que bloc */
+    margin: 0 auto 20px;
+    /* Marge en bas et centrage horizontal */
+}
+
+.addons {
+    margin-top: 20px;
+    /* Espacement vers le haut */
+}
+
+.addon-products {
+    display: flex;
+    justify-content: space-around;
+}
+
+.addon-product {
+    width: 150px;
+    /* Largeur de chaque produit */
+    padding: 10px;
+    /* Espacement intérieur */
+    border: 1px solid #ddd;
+    /* Bordure */
+    border-radius: 5px;
+    /* Bordures arrondies */
+    text-align: center;
+    /* Centrage du texte */
+}
+
+.total {
+
+    margin-top: 20px;
+    /* Espacement vers le haut */
+    margin-bottom: 20px;
+    /* Espacement vers le bas */
+}
+
+.livrasion {
+
+    border: 1px solid #ddd;
+    /* Bordure */
+    border-radius: 5px;
+    /* Bordures arrondies */
+    padding: 10px;
+    /* Espacement intérieur */
+    text-align: center;
+    /* Centrage du texte */
+    margin-bottom: 20px;
+    /* Espacement vers le bas */
+
+
+
+
+}

@@ -1,0 +1,85 @@
+.containerCheckout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    text-align: center;
+}
+
+.checkout {
+    width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+
+.miniLogo {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.resume-articles {
+    margin-bottom: 20px;
+}
+
+.resume-articles ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resume-articles li {
+    margin-bottom: 10px;
+}
+
+.code-promo,
+.adresse,
+.carte-credit,
+.total {
+    margin-bottom: 20px;
+}
+
+.code-promo input,
+.adresse input,
+.carte-credit input,
+.total input,
+.code-promo button,
+.adresse button,
+.carte-credit button,
+.total button {
+    margin-top: 10px;
+}
+
+.total p {
+    margin-bottom: 5px;
+}
+
+.button {
+    margin-left: 10px;
+    background-color: #0D9276;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Ajouter des règles pour aligner les éléments de formulaire */
+form {
+    display: grid;
+    gap: 10px;
+}
+
+.form-group {
+    display: grid;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+}
