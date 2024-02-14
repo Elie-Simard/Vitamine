@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
 import { Button, Icon, Message, MessageHeader, Segment, Grid, GridColumn, FormInput, Form, Divider } from 'semantic-ui-react';
 import logo from './Pharmacien-logo-867FAF3378-seeklogo.com.png';
 import './accueil.css';
+import ContactInfo from './contactInfo';
 
 const ConnexionOuInscription = () => (
     <Segment placeholder>
@@ -30,6 +31,12 @@ const ConnexionOuInscription = () => (
 const Accueil = () => {
     document.body.classList.add('accueilBody');
 
+    const [contactInfoVisible, setContactInfoVisible] = useState(false);
+
+    const handleContactInfoClick = () => {
+        setContactInfoVisible(!contactInfoVisible);
+    };
+
     return (
         <div className="accueil-body-container">
             <div className="accueil-containerAccueil">
@@ -45,10 +52,11 @@ const Accueil = () => {
                         <p>Découvrez une large sélection de produits de qualité.</p>
                     </Message>
                     <ConnexionOuInscription />
+
                     <br />
                     <br />
                     <button className="accueil-button">À propos</button>
-                    <button className="accueil-button">Nous Contacter</button>
+                    <ContactInfo onClose={handleContactInfoClick} />
                     <Link to="/catalogue">
                         <button className="accueil-button">Voir le catalogue</button>
                     </Link>
