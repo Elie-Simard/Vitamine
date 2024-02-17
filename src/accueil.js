@@ -108,6 +108,13 @@ const Accueil = () => {
 
                     <div style={{ textAlign: 'center' }}>
                         <br />
+                        Accueil, Inscription, InfosCompte: ©Élie Simard
+                        <br />
+                        Catalogue, Historique: ©Pascal-Jean Lanteigne
+                        <br />
+                        Panier, Checkout: ©Alexandre Roy
+                        <br /> <br />
+
                         © 2024 Pharmacie BonLeBon
                     </div>
                 </div>

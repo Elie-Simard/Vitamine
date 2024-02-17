@@ -15,6 +15,7 @@ const CreerCompte = ({ onAccountCreation }) => {
         address: '',
         phone: '',
     });
+    const [compteCree, setCompteCree] = useState(false);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -24,6 +25,7 @@ const CreerCompte = ({ onAccountCreation }) => {
     const handleCreateAccount = (e) => {
         e.preventDefault();
         onAccountCreation(user);
+        setCompteCree(true);
     };
 
     document.body.classList.add('creerCompteBody');
@@ -31,54 +33,60 @@ const CreerCompte = ({ onAccountCreation }) => {
 
     return (
         <div className="containerCreerCompte">
-            <Box
-                component="form"
-                autoComplete="off"
-                className="containerCreerCompte"
-            >
-                <Link to="/">
-                    <img className="miniLogo" src={logo} alt="Pharmacie Logo" />
-                </Link>
-                <h1>Créer un compte</h1>
-                <TextField
-                    required
-                    label="Adresse email"
-                    placeholder="Adresse email"
-                    onChange={handleInputChange}
-                    name="email"
-                    margin="normal"
-                />
-                <TextField
-                    required
-                    label="Mot de passe"
-                    type="password"
-                    placeholder="Mot de passe"
-                    onChange={handleInputChange}
-                    name="password"
-                    margin="normal"
-                />
-                <TextField
-                    required
-                    label="Prénom et Nom"
-                    placeholder="Prénom et Nom"
-                    onChange={handleInputChange}
-                    name="name"
-                    margin="normal"
-                />
-                <TextField
-                    label="Téléphone"
-                    placeholder="Téléphone"
-                    onChange={handleInputChange}
-                    name="phone"
-                    margin="normal"
-                />
-                <Button type="submit" variant="contained" color="primary" onClick={handleCreateAccount}>
-                    Confirmer
-                </Button>
-                <Link to="/infosCompte">
-                    <Button>Voir vos infos</Button>
-                </Link>
-            </Box>
+            {compteCree ? (
+                <div>
+                    <p>Compte créé avec succès!</p>
+                    <Link to="/infosCompte">
+                        <Button>Voir vos infos</Button>
+                    </Link>
+                </div>
+            ) : (
+                <Box
+                    component="form"
+                    autoComplete="off"
+                    className="containerCreerCompte"
+                >
+                    <Link to="/">
+                        <img className="miniLogo" src={logo} alt="Pharmacie Logo" />
+                    </Link>
+                    <h1>Créer un compte</h1>
+                    <TextField
+                        required
+                        label="Adresse email"
+                        placeholder="Adresse email"
+                        onChange={handleInputChange}
+                        name="email"
+                        margin="normal"
+                    />
+                    <TextField
+                        required
+                        label="Mot de passe"
+                        type="password"
+                        placeholder="Mot de passe"
+                        onChange={handleInputChange}
+                        name="password"
+                        margin="normal"
+                    />
+                    <TextField
+                        required
+                        label="Prénom et Nom"
+                        placeholder="Prénom et Nom"
+                        onChange={handleInputChange}
+                        name="name"
+                        margin="normal"
+                    />
+                    <TextField
+                        label="Téléphone"
+                        placeholder="Téléphone"
+                        onChange={handleInputChange}
+                        name="phone"
+                        margin="normal"
+                    />
+                    <Button type="submit" variant="contained" color="primary" onClick={handleCreateAccount}>
+                        Confirmer
+                    </Button>
+                </Box>
+            )}
         </div>
     );
 };

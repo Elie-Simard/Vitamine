@@ -79,9 +79,7 @@ const InfosCompte = ({ userInfo }) => {
                 <button type="button" className="infosCompte-button">Déconnexion</button>
             </Link>
 
-            <Link to="/catalogue">
-                <button type="button" className="infosCompte-button">Allez au catalogue</button>
-            </Link>
+
         </div>
     );
 };
