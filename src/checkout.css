@@ -69,7 +69,7 @@
     cursor: pointer;
 }
 
-/* Ajouter des règles pour aligner les éléments de formulaire */
+/* Ajout de règles pour aligner les éléments de formulaire */
 form {
     display: grid;
     gap: 10px;

@@ -12,7 +12,7 @@
 .miniLogo {
     max-width: 60px;
     margin-right: 20px;
-    /* Add margin to separate logo from company name */
+    /* separe le logo du titre */
 }
 
 .containerCatalogueLogo {
@@ -29,7 +29,7 @@
 
 .companyName {
     flex-grow: 1;
-    /* Allow the company name to grow and occupy remaining space */
+    /* pour que le titre prenne toute la place restante */
     font-family: "Comic Sans MS", cursive;
     color: #0D9276;
 }
@@ -68,7 +68,6 @@
 .searchIpnut {
     padding: 8px;
     width: fit-content;
-    /* Adjust as needed */
 }
 
 

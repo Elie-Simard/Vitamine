@@ -28,12 +28,12 @@
 
 .panier h2 {
     text-align: center;
-    /* Centrer le titre */
+    /* Centre le titre */
 }
 
 .panier ul {
     list-style: none;
-    /* Supprimer les puces de liste */
+    /* Supprime les puces de liste */
     padding: 0;
 }
 

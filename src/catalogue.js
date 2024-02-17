@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from './Pharmacien-logo-867FAF3378-seeklogo.com.png';
 import './catalogue.css';
 import { Grid, TextField, Button, Typography, IconButton } from '@mui/material';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'; // Import cart icon from Material-UI
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'; // Import cart icon de Material-UI
 import ProductCard from './productCard';
 
 
@@ -36,7 +36,7 @@ const Catalogue = () => {
                                 </Link>
                             </Grid>
                             <Grid item>
-                                {/* Cart button with icon */}
+                                {/* Cart button avec icon */}
                                 <Link to="/panier">
                                     <IconButton color="primary" aria-label="cart">
                                         <ShoppingCartIcon />
