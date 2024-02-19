@@ -1,4 +1,5 @@
 # Welcome to the BonLeBonPharma
+Travail en équipe de développement Agile Scrum collaborative.
 
 Accueil, Inscription, InfosCompte, uniformatisation et mise en fonction: ©Élie Simard
 
