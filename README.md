@@ -1,5 +1,11 @@
 # Welcome to the BonLeBonPharma
 
+Accueil, Inscription, InfosCompte, uniformatisation et mise en fonction: ©Élie Simard
+
+Catalogue, Historique: ©Pascal-Jean Lanteigne
+
+ Panier, Checkout: ©Alexandre Roy
+
 <img width="1708" alt="Screenshot 2024-02-14 at 2 00 38 PM" src="https://github.com/Elie-Simard/BonLeBonPharma/assets/104814268/3f67726d-e591-451d-8089-d38a2580b5e6">
 <img width="1153" alt="Screenshot 2024-02-14 at 2 44 57 PM" src="https://github.com/Elie-Simard/BonLeBonPharma/assets/104814268/656c4578-051f-4096-97b4-13c0a386b0cf">
 <img width="1154" alt="Screenshot 2024-02-14 at 2 45 05 PM" src="https://github.com/Elie-Simard/BonLeBonPharma/assets/104814268/1a7c930a-0b8d-4629-b294-2c2fa3d01395">
