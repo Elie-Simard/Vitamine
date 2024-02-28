@@ -60,6 +60,17 @@ const Accueil = () => {
                     <Link to="/catalogue">
                         <button className="accueil-button">Voir le catalogue</button>
                     </Link>
+
+                    {/* Ajouter par moi */}
+                    <Link to="/concours">
+                        <button className="accueil-button">Concours</button>
+                    </Link>
+                    
+                    <Link to="/jeux">
+                        <button className="accueil-button">Jeux</button>
+                    </Link>
+                    {/* Ajouter par moi */}
+
                 </div>
                 <br />
                 <br />

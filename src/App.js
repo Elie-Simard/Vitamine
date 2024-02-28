@@ -9,7 +9,11 @@ import Catalogue from './catalogue';
 import ListeCommandes from './listeCommandes';
 import Panier from './panier';
 import Checkout from './checkout';
-
+import Concours from './concours';
+import Concour1 from './concour1';
+import Connect4 from './connect4';
+import Jeux from './jeux';
+import Jeu1 from './jeu1';
 
 function App() {
   const [userInfo, setUserInfo] = useState(null);
@@ -33,6 +37,11 @@ function App() {
         <Route path="/listeCommandes" element={<ListeCommandes />} />
         <Route path="/panier" element={<Panier />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route exact={true} path="/concours" element={<Concours />} />
+        <Route exact={true} path="/concour1" element={<Concour1 />} />
+        <Route path="/connect4" element={<Connect4 />} />
+        <Route exact={true} path="/jeux" element={<Jeux />} />
+        <Route exact={true} path="/jeu1" element={<Jeu1 />} />
 
       </Routes>
     </Router>

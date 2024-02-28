@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from './Pharmacien-logo-867FAF3378-seeklogo.com.png';
 import './catalogue.css';
 import { Grid, TextField, Button, Typography, IconButton } from '@mui/material';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'; // Import cart icon de Material-UI
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import ProductCard from './productCard';
 
 
@@ -55,7 +55,7 @@ const Catalogue = () => {
             </div>
             {/* Page Title */}
 
-            <div style={{ backgroundColor: '#BBE2EC', padding: '10px', maxWidth: '1000px', margin: '0 auto', minHeight: '160vh', height: '2600vh' }}>
+            <div style={{ backgroundColor: '#BBE2EC', padding: '10px', maxWidth: '1000px', margin: '0 auto', minHeight: '100vh'}}>
                 <Grid container justifyContent="center" style={{ marginTop: '20px' }}>
                     <Typography variant="h4" component="h1" style={{ fontFamily: 'Comic Sans MS', fontWeight: 'bold' }}>CATALOGUE</Typography>
                 </Grid>

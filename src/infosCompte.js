@@ -82,6 +82,15 @@ const InfosCompte = ({ userInfo }) => {
             <Link to="/catalogue">
                 <button type="button" className="infosCompte-button">Allez au catalogue</button>
             </Link>
+
+            {/* Ajouter par moi */}
+            <Link to="/concours">
+                <button type="button" className="infosCompte-button">Concours</button>
+            </Link>
+            <Link to="/jeux">
+                <button type="button" className="infosCompte-button">Jeux</button>
+            </Link>
+            {/* Ajouter par moi */}
         </div>
     );
 };
