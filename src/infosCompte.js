@@ -12,7 +12,9 @@ import {
 } from 'semantic-ui-react';
 import './infosCompte.css';
 
-const InfosCompte = ({ userInfo }) => {
+const InfosCompte = ({ userInfo }) => { // va chercher userInfo dans App.js qui elle va chercher les infos dans creerCompte.js
+    console.log(userInfo); // Pour déboguer et vérifier si userInfo se met à jour
+
     const TableauInfos = () => (
         <>
             <Divider horizontal>
@@ -49,6 +51,10 @@ const InfosCompte = ({ userInfo }) => {
                         <TableCell>Mot de passe</TableCell>
                         <TableCell>{userInfo.password}</TableCell>
                     </TableRow>
+                    <TableRow>
+                        <TableCell>Allergies</TableCell>
+                        <TableCell>{userInfo.allergies}</TableCell>
+                    </TableRow>
                 </TableBody>
             </Table>
         </>
@@ -82,7 +88,9 @@ const InfosCompte = ({ userInfo }) => {
             <Link to="/catalogue">
                 <button type="button" className="infosCompte-button">Allez au catalogue</button>
             </Link>
-
+            <Link to="/allergiesInfos">
+                <button type="button" className="infosCompte-button">Ajouter vos allergies</button>
+            </Link>
             {/* Ajouter par moi */}
             <Link to="/concours">
                 <button type="button" className="infosCompte-button">Concours</button>
