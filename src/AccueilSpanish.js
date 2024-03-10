@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
-import { Button, Icon, Message, MessageHeader, Segment, Grid, GridColumn, Form, Divider, Tab } from 'semantic-ui-react';
+import { Button, Icon, Message, MessageHeader, Segment, Grid, GridColumn, Divider } from 'semantic-ui-react';
 import logo from './logoVit.webp';
 import './accueil.css';
 import ContactInfo from './contactInfo';
@@ -10,23 +10,21 @@ const ConnexionOuInscription = () => (
     <Segment placeholder>
         <Grid columns={2} relaxed="very" stackable>
             <GridColumn>
-                <Form>
-                    <Link to="/Connexion">
-                        <Button content="Connexion" primary />
-                    </Link>
-                </Form>
+                <Link to="/Connexion">
+                    <Button content="Iniciar sesión" primary />
+                </Link>
             </GridColumn>
             <GridColumn verticalAlign="middle">
                 <Link to="/creerCompte">
-                    <Button content="Inscription" icon="signup" size="big" />
+                    <Button content="Registrarse" icon="signup" size="big" />
                 </Link>
             </GridColumn>
         </Grid>
-        <Divider vertical>Ou</Divider>
+        <Divider vertical>O</Divider>
     </Segment>
 );
 
-const Accueil = () => {
+const AccueilSpanish = () => {
     document.body.classList.add('accueilBody');
 
     const [contactInfoVisible, setContactInfoVisible] = useState(false);
@@ -40,38 +38,25 @@ const Accueil = () => {
             <div className="accueil-containerAccueil">
                 <br />
                 <br />
-                <img className="miniLogo" src={logo} alt="Pharmacie Logo" />
-                <h1 className="accueil-title">Vitamine BonLeBon</h1>
+                <img className="miniLogo" src={logo} alt="Logo de la farmacia" />
+                <h1 className="accueil-title">Vitamina BuenoElBueno</h1>
                 <br />
                 <br />
-
                 <div>
                     <Message style={{ textAlign: 'center' }}>
-                        <MessageHeader>Bienvenue Chez Vitamine BonLeBon</MessageHeader>
-                        <p>Découvrez une large sélection de produits de qualité.</p>
+                        <MessageHeader>Bienvenido a Vitamina BuenoElBueno</MessageHeader>
+                        <p>Descubre una amplia selección de productos de calidad.</p>
                     </Message>
                     <ConnexionOuInscription />
 
                     <br />
                     <br />
-                    <ContactInfo onClose={handleContactInfoClick} />
+                    <Link to="/">
+                        <button className="accueil-button">Français</button>
+                    </Link>                    <ContactInfo onClose={handleContactInfoClick} />
                     <Link to="/catalogue">
-                        <button className="accueil-button">Catalogue</button>
+                        <button className="accueil-button">Ver el catálogo</button>
                     </Link>
-
-                    <Link to="/concours">
-                        <button className="accueil-button">Concours</button>
-                    </Link>
-
-                    <Link to="/jeux">
-                        <button className="accueil-button">Jeux</button>
-                    </Link>
-                    <Link to="/AccueilSpanish">
-
-                        <button className="accueil-button">Español</button>
-                    </Link>
-
-
                 </div>
                 <br />
                 <br />
@@ -94,6 +79,7 @@ const Accueil = () => {
                         </a>
 
 
+
                         <a href="https://www.linkedin.com/">
                             <Button color="linkedin">
                                 <Icon name="linkedin" /> LinkedIn
@@ -106,11 +92,11 @@ const Accueil = () => {
                             </Button>
                         </a>
 
+
                     </div>
-                    <br />
 
                     <div style={{ textAlign: 'center' }}>
-                        © 2024 Vitamine BonLeBon
+                        © 2024 Vitamina BuenoElBueno
                     </div>
                 </div>
             </div>
@@ -118,4 +104,4 @@ const Accueil = () => {
     );
 };
 
-export default Accueil;
+export default AccueilSpanish;

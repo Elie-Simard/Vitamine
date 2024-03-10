@@ -1,7 +1,7 @@
 body.infosCompteBody {
     margin: 0;
     padding: 0;
-    background: url('./blank.jpeg');
+    background: url('../public/images/pharma.png');
 }
 
 .infosCompte-body-container {
@@ -17,7 +17,7 @@ body.infosCompteBody {
 }
 
 .infosCompte-button {
-    background-color: #2e70c6;
+    background-color: #0D9276;
     border: none;
     color: white;
     /* flex-direction: column; */
@@ -34,6 +34,6 @@ body.infosCompteBody {
     font-family: cursive;
     font-size: 36px;
     font-weight: bold;
-    color: #2e70c6;
+    color: #0D9276;
     margin: 10px 0;
 }

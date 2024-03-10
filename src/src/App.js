@@ -15,7 +15,7 @@ import Concour1 from './concour1';
 import Connect4 from './connect4';
 import Jeux from './jeux';
 import Jeu1 from './jeu1';
-import AccueilSpanish from './AccueilSpanish';
+
 
 function App() {
 
@@ -35,13 +35,13 @@ function App() {
     localStorage.setItem('userInfo', JSON.stringify(data));
   };
 
+
   const handleAllergiesUpdate = (allergies) => {
     console.log(allergies);
     const updatedUserInfo = { ...userInfo, allergies };
     setUserInfo(updatedUserInfo);
     localStorage.setItem('userInfo', JSON.stringify(updatedUserInfo));
   };
-
 
 
   return (
@@ -53,12 +53,12 @@ function App() {
           path="/creerCompte"
           element={<CreerCompte onAccountCreation={handleUserInfo} />}
         /> 
+
         <Route path="/infosCompte" element={<InfosCompte userInfo={userInfo} />} />
         <Route path="/catalogue" element={<Catalogue />} />
         <Route path="/listeCommandes" element={<ListeCommandes />} />
         <Route path="/panier" element={<Panier />} />
         <Route path="/checkout" element={<Checkout />} />
-        <Route path="/allergiesInfos" element={<AllergiesInfos onUpdateUserInfo={handleAllergiesUpdate} />} />
         <Route
           path="/allergiesInfos"
           element={<AllergiesInfos onUpdateUserInfo={handleAllergiesUpdate} />} />
@@ -67,7 +67,7 @@ function App() {
         <Route path="/connect4" element={<Connect4 />} />
         <Route exact={true} path="/jeux" element={<Jeux />} />
         <Route exact={true} path="/jeu1" element={<Jeu1 />} />
-        <Route exact={true} path="/AccueilSpanish" element={<AccueilSpanish />} />
+
       </Routes>
     </Router>
   );

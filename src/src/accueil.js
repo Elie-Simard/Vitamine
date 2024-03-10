@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
-import { Button, Icon, Message, MessageHeader, Segment, Grid, GridColumn, Form, Divider, Tab } from 'semantic-ui-react';
-import logo from './logoVit.webp';
+import { Button, Icon, Message, MessageHeader, Segment, Grid, GridColumn, FormInput, Form, Divider } from 'semantic-ui-react';
+import logo from './Pharmacien-logo-867FAF3378-seeklogo.com.png';
 import './accueil.css';
 import ContactInfo from './contactInfo';
 
@@ -11,7 +11,9 @@ const ConnexionOuInscription = () => (
         <Grid columns={2} relaxed="very" stackable>
             <GridColumn>
                 <Form>
-                    <Link to="/Connexion">
+                    <FormInput icon="user" iconPosition="left" label="Courriel" placeholder="Courriel" />
+                    <FormInput icon="lock" iconPosition="left" label="Mot de passe" type="password" />
+                    <Link to="/infosCompte">
                         <Button content="Connexion" primary />
                     </Link>
                 </Form>
@@ -41,13 +43,12 @@ const Accueil = () => {
                 <br />
                 <br />
                 <img className="miniLogo" src={logo} alt="Pharmacie Logo" />
-                <h1 className="accueil-title">Vitamine BonLeBon</h1>
+                <h1 className="accueil-title">Pharmacie BonLeBon</h1>
                 <br />
                 <br />
-
                 <div>
                     <Message style={{ textAlign: 'center' }}>
-                        <MessageHeader>Bienvenue Chez Vitamine BonLeBon</MessageHeader>
+                        <MessageHeader>Bienvenue à la Pharmacie BonLeBon</MessageHeader>
                         <p>Découvrez une large sélection de produits de qualité.</p>
                     </Message>
                     <ConnexionOuInscription />
@@ -56,21 +57,18 @@ const Accueil = () => {
                     <br />
                     <ContactInfo onClose={handleContactInfoClick} />
                     <Link to="/catalogue">
-                        <button className="accueil-button">Catalogue</button>
+                        <button className="accueil-button">Voir le catalogue</button>
                     </Link>
 
+                    {/* Ajouter par moi */}
                     <Link to="/concours">
                         <button className="accueil-button">Concours</button>
                     </Link>
-
+                    
                     <Link to="/jeux">
                         <button className="accueil-button">Jeux</button>
                     </Link>
-                    <Link to="/AccueilSpanish">
-
-                        <button className="accueil-button">Español</button>
-                    </Link>
-
+                    {/* Ajouter par moi */}
 
                 </div>
                 <br />
@@ -93,6 +91,11 @@ const Accueil = () => {
                             </Button>
                         </a>
 
+                        <a href="https://plus.google.com/">
+                            <Button color="google plus">
+                                <Icon name="google plus" /> Google Plus
+                            </Button>
+                        </a>
 
                         <a href="https://www.linkedin.com/">
                             <Button color="linkedin">
@@ -106,11 +109,18 @@ const Accueil = () => {
                             </Button>
                         </a>
 
+                        <a href="https://www.youtube.com/">
+                            <Button color="youtube">
+                                <Icon name="youtube" /> YouTube
+                            </Button>
+                        </a>
                     </div>
-                    <br />
 
                     <div style={{ textAlign: 'center' }}>
-                        © 2024 Vitamine BonLeBon
+                        <br />
+
+
+                        © 2024 Pharmacie BonLeBon
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from './logoVit.webp';
+import logo from './Pharmacien-logo-867FAF3378-seeklogo.com.png';
 import './catalogue.css';
 import { Grid, TextField, Button, Typography, IconButton } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -23,28 +23,28 @@ const Catalogue = () => {
             productName: "Produit 1",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper id arcu quis placerat.",
             price: "$10.00",
-            imageUrl: "images/sisu.webp",
+            imageUrl: "images/barre.jpg",
             allergenes: ["gluten", "noix"]
         },
         {
             productName: "Produit 2",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper id arcu quis placerat.",
             price: "$15.00",
-            imageUrl: "images/workout.jpeg",
+            imageUrl: "images/advil.jpg",
             allergenes: ["antibiotique"]
         },
         {
             productName: "Produit 3",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper id arcu quis placerat.",
             price: "$12.00",
-            imageUrl: "images/purple.jpeg",
+            imageUrl: "images/sirop.png",
             allergenes: ["antibiotique","gluten"]
         },
         {
             productName: "Produit 4",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper id arcu quis placerat.",
             price: "$3.00",
-            imageUrl: "images/laroche.jpeg",
+            imageUrl: "images/shampoo.jpg",
             allergenes: ["noix"]
         },
 
@@ -79,18 +79,15 @@ const Catalogue = () => {
     return (
         <div>
             {/* Top navigation bar */}
-            {/* ajouteunr un espace en haut car la cest trop haut */}
-            <div style={{ height: '50px' }}></div>
-            {/* Top navigation bar */}
-            <div style={{ backgroundColor: 'white', padding: '10px' }}>
-                <Grid container justifyContent="space-between" alignItems="center" style={{ backgroundColor: 'white', padding: '10px' }}>
+            <div style={{ backgroundColor: '#7EA4B2', padding: '10px' }}>
+                <Grid container justifyContent="space-between" alignItems="center" style={{ backgroundColor: '#BBE2EC', padding: '10px' }}>
                     {/* Left side: Logo */}
                     <Grid item>
-                        <div className='containerCatalogueLogo' style={{ backgroundColor: 'white' }}>
+                        <div className='containerCatalogueLogo'>
                             <Link to="/">
                                 <img className='miniLogo' src={logo} alt="Pharmacie Logo" />
                             </Link>
-                            <Typography variant="h5" component="h2" style={{ fontFamily: 'Comic Sans MS', color: 'blue' }}>Vitamine BonLeBon</Typography>
+                            <Typography variant="h5" component="h2" style={{ fontFamily: 'Comic Sans MS', color: '#0D9276' }}>Pharmacie BonLeBon</Typography>
                         </div>
                     </Grid>
                     {/* Right side: Search Box and Button */}
@@ -119,7 +116,7 @@ const Catalogue = () => {
                 </Grid>
             </div>
             {/* Page Title */}
-            <div style={{ backgroundColor: 'white', padding: '10px', maxWidth: '1000px', margin: '0 auto', minHeight: '100vh' }}>
+            <div style={{ backgroundColor: '#BBE2EC', padding: '10px', maxWidth: '1000px', margin: '0 auto', minHeight: '100vh'}}>
                 <Grid container justifyContent="center" style={{ marginTop: '20px' }}>
                     <Typography variant="h4" component="h1" style={{ fontFamily: 'Comic Sans MS', fontWeight: 'bold' }}>CATALOGUE</Typography>
                 </Grid>

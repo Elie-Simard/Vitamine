@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 
 import './creerCompte.css';
 
-const CreerCompte = ({ onAccountCreation }) => {
+const Connexion = ({ onAccountCreation }) => {
     const [user, setUser] = useState({
         email: '',
         password: '',
@@ -18,7 +18,7 @@ const CreerCompte = ({ onAccountCreation }) => {
     });
     const [compteCree, setCompteCree] = useState(false); // pour afficher le message de confirmation
 
-    const handleInputChange = (e) => { 
+    const handleInputChange = (e) => {
         const { name, value } = e.target;
         setUser({ ...user, [name]: value });
     };
@@ -36,7 +36,7 @@ const CreerCompte = ({ onAccountCreation }) => {
         <div className="containerCreerCompte">
             {compteCree ? (
                 <div>
-                    <p>Compte créé avec succès!</p>
+                    <p>Succès</p>
                     <Link to="/infosCompte">
                         <Button>Voir vos infos</Button>
                     </Link>
@@ -50,7 +50,8 @@ const CreerCompte = ({ onAccountCreation }) => {
                     <Link to="/">
                         <img className="miniLogo" src={logo} alt="Pharmacie Logo" />
                     </Link>
-                    <h1>Créer un compte</h1>
+                    <h1>Connexion</h1>
+                    <br />
                     <TextField
                         required
                         label="Adresse email"
@@ -59,6 +60,7 @@ const CreerCompte = ({ onAccountCreation }) => {
                         name="email"
                         margin="normal"
                     />
+                    <br />
                     <TextField
                         required
                         label="Mot de passe"
@@ -68,28 +70,9 @@ const CreerCompte = ({ onAccountCreation }) => {
                         name="password"
                         margin="normal"
                     />
-                    <TextField
-                        required
-                        label="Prénom et Nom"
-                        placeholder="Prénom et Nom"
-                        onChange={handleInputChange}
-                        name="name"
-                        margin="normal"
-                    />
-                    <TextField
-                        label="Téléphone"
-                        placeholder="Téléphone"
-                        onChange={handleInputChange}
-                        name="phone"
-                        margin="normal"
-                    />
-                        <TextField
-                            label="Allergies"
-                            placeholder="Allergies"
-                            onChange={handleInputChange}
-                            name="allergies"
-                            margin="normal"
-                        />
+                    <br />
+                    <br />
+                    {/* redirige le bouton vers infosCompte---> */}
                     <Button type="submit" variant="contained" color="primary" onClick={handleCreateAccount}>
                         Confirmer
                     </Button>
@@ -99,4 +82,4 @@ const CreerCompte = ({ onAccountCreation }) => {
     );
 };
 
-export default CreerCompte;
+export default Connexion;

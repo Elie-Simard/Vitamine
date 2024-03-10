@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from './logoVit.webp';
+import logo from './Pharmacien-logo-867FAF3378-seeklogo.com.png';
 import {
     TableRow,
     TableCell,
@@ -63,10 +63,9 @@ const InfosCompte = ({ userInfo }) => { // va chercher userInfo dans App.js qui 
     return (
         <div className='infosCompte-body-container'>
             <Link to="/">
-                <img style={{ width: '180px' }}
-                    src={logo} alt="Pharmacie Logo" />
+                <img className="minilogo" src={logo} alt="Pharmacie Logo" />
             </Link>
-            <h1 className='infosCompte-title'>Vitamine BonLeBon </h1>
+            <h1 className='infosCompte-title'>Pharmacie BonLeBon </h1>
 
             <h1>Voici vos infos de compte</h1>
 
@@ -76,14 +75,9 @@ const InfosCompte = ({ userInfo }) => { // va chercher userInfo dans App.js qui 
                 <p>Vous n'avez pas de compte</p>
             )}
 
-            <Link to="/creerCompte">
-                <button type="button" className="infosCompte-button">Modifier</button>
+            <Link to="/listeCommandes">
+                <button type="button" className="infosCompte-button">Commandes</button>
             </Link>
-
-            <Link to="/allergiesInfos">
-                <button type="button" className="infosCompte-button">Allergies</button>
-            </Link>
-
 
             <Link to="/">
                 <button type="button" className="infosCompte-button">Déconnexion</button>
@@ -92,8 +86,17 @@ const InfosCompte = ({ userInfo }) => { // va chercher userInfo dans App.js qui 
             <Link to="/catalogue">
                 <button type="button" className="infosCompte-button">Allez au catalogue</button>
             </Link>
-
-
+            <Link to="/allergiesInfos">
+                <button type="button" className="infosCompte-button">Ajouter vos allergies</button>
+            </Link>
+            {/* Ajouter par moi */}
+            <Link to="/concours">
+                <button type="button" className="infosCompte-button">Concours</button>
+            </Link>
+            <Link to="/jeux">
+                <button type="button" className="infosCompte-button">Jeux</button>
+            </Link>
+            {/* Ajouter par moi */}
         </div>
     );
 };
