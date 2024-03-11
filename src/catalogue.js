@@ -38,7 +38,7 @@ const Catalogue = () => {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper id arcu quis placerat.",
             price: "$12.00",
             imageUrl: "images/purple.jpeg",
-            allergenes: ["antibiotique","gluten"]
+            allergenes: ["antibiotique", "gluten"]
         },
         {
             productName: "Produit 4",

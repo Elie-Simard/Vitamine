@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
-import { Button, Icon, Message, MessageHeader, Segment, Grid, GridColumn, Form, Divider, Tab } from 'semantic-ui-react';
+import { Button, Icon, Message, MessageHeader, Segment, Grid, GridColumn, Form, Divider } from 'semantic-ui-react';
 import logo from './logoVit.webp';
 import './accueil.css';
 import ContactInfo from './contactInfo';
