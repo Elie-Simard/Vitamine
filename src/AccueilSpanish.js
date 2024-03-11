@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
-import { Button, Icon, Message, MessageHeader, Segment, Grid, GridColumn, Divider } from 'semantic-ui-react';
+import { Button, Icon, Message, MessageHeader, Segment, Grid, GridColumn, Divider, Form, FormInput } from 'semantic-ui-react';
 import logo from './logoVit.webp';
 import './accueil.css';
 import ContactInfo from './contactInfo';
@@ -10,9 +10,13 @@ const ConnexionOuInscription = () => (
     <Segment placeholder>
         <Grid columns={2} relaxed="very" stackable>
             <GridColumn>
-                <Link to="/Connexion">
-                    <Button content="Iniciar sesión" primary />
-                </Link>
+                <Form>
+                    <FormInput icon="user" iconPosition="left" label="Courriel" placeholder="Courriel" />
+                    <FormInput icon="lock" iconPosition="left" label="Mot de passe" type="password" />
+                    <Link to="/infosCompte">
+                        <Button content="Connexion" primary />
+                    </Link>
+                </Form>
             </GridColumn>
             <GridColumn verticalAlign="middle">
                 <Link to="/creerCompte">
@@ -51,12 +55,13 @@ const AccueilSpanish = () => {
 
                     <br />
                     <br />
-                    <Link to="/">
-                        <button className="accueil-button">Français</button>
-                    </Link>                    <ContactInfo onClose={handleContactInfoClick} />
+                    <ContactInfo onClose={handleContactInfoClick} />
                     <Link to="/catalogue">
                         <button className="accueil-button">Ver el catálogo</button>
                     </Link>
+                    <Link to="/">
+                        <button className="accueil-button">Français</button>
+                    </Link>  
                 </div>
                 <br />
                 <br />

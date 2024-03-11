@@ -6,7 +6,7 @@ import "./checkout.css";
 
 const Checkout = () => {
   // State pour les informations du panier
-  const [items, setItems] = useState([
+  const [items] = useState([
     { id: 1, name: "Produit 1 ", quantity: 1, price: 10 },
     { id: 2, name: "Produit 2 ", quantity: 1, price: 20 },
     { id: 3, name: "Produit 3 ", quantity: 1, price: 15 },

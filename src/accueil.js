@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
-import { Button, Icon, Message, MessageHeader, Segment, Grid, GridColumn, Form, Divider } from 'semantic-ui-react';
+import { Button, Icon, Message, MessageHeader, Segment, Grid, GridColumn, Divider, Form, FormInput } from 'semantic-ui-react';
 import logo from './logoVit.webp';
 import './accueil.css';
 import ContactInfo from './contactInfo';
@@ -11,7 +11,9 @@ const ConnexionOuInscription = () => (
         <Grid columns={2} relaxed="very" stackable>
             <GridColumn>
                 <Form>
-                    <Link to="/Connexion">
+                    <FormInput icon="user" iconPosition="left" label="Courriel" placeholder="Courriel" />
+                    <FormInput icon="lock" iconPosition="left" label="Mot de passe" type="password" />
+                    <Link to="/infosCompte">
                         <Button content="Connexion" primary />
                     </Link>
                 </Form>

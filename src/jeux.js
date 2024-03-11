@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from './Pharmacien-logo-867FAF3378-seeklogo.com.png';
+import logo from './logoVit.webp';
 import { Grid, TextField, Button, Typography, IconButton } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
@@ -16,7 +16,7 @@ const Jeux = () => {
                             <Link to="/">
                                 <img className='miniLogo' src={logo} alt="Pharmacie Logo" />
                             </Link>
-                            <Typography variant="h5" component="h2" style={{ fontFamily: 'Comic Sans MS', color: '#0D9276' }} >Pharmacie BonLeBon</Typography>
+                            <Typography variant="h5" component="h2" style={{ fontFamily: 'Comic Sans MS', color: '#0D9276' }} >Vitamine BonLeBon</Typography>
                             <Grid item style={{ marginLeft: '10px' }}>
                                 <Link to="/infosCompte">
                                     <Button variant="contained" color="primary">Retour</Button>
