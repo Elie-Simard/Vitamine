@@ -2,20 +2,20 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
-import CreerCompte from './creerCompte';
-import Accueil from './accueil';
-import InfosCompte from './infosCompte';
-import Catalogue from './catalogue';
-import ListeCommandes from './listeCommandes';
-import Panier from './panier';
-import AllergiesInfos from './allergiesInfos';
-import Checkout from './checkout';
-import Concours from './concours';
-import Concour1 from './concour1';
-import Connect4 from './connect4';
-import Jeux from './jeux';
-import Jeu1 from './jeu1';
-import AccueilSpanish from './AccueilSpanish';
+import CreerCompte from './zcomponents/creerCompte/creerCompte';
+import Accueil from './zcomponents/accueil/accueil';
+import InfosCompte from './zcomponents/infosCompte/infosCompte';
+import Catalogue from './zcomponents/catalogue/catalogue';
+import ListeCommandes from './zcomponents/listeCommandes/listeCommandes';
+import Panier from './zcomponents/panier/panier';
+import AllergiesInfos from './zcomponents/allergiesInfos/allergiesInfos';
+import Checkout from './zcomponents/checkout/checkout';
+import Concours from './zcomponents/concours/concours';
+import Concour1 from './zcomponents/concours/concour1';
+import Connect4 from './zcomponents/jeux/connect4';
+import Jeux from './zcomponents/jeux/jeux';
+import Jeu1 from './zcomponents/jeux/jeu1';
+import AccueilSpanish from './zcomponents/accueil/AccueilSpanish';
 
 function App() {
 

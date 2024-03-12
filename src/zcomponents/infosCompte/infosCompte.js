@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from './logoVit.webp';
 import {
     TableRow,
     TableCell,
@@ -10,7 +9,9 @@ import {
     Icon,
     Table,
 } from 'semantic-ui-react';
-import './infosCompte.css';
+
+import logo from '../../images/logoVit.webp';
+import '../../style/infosCompte.css';
 
 const InfosCompte = ({ userInfo }) => { // va chercher userInfo dans App.js qui elle va chercher les infos dans creerCompte.js
     console.log(userInfo); // Pour déboguer et vérifier si userInfo se met à jour
@@ -75,7 +76,9 @@ const InfosCompte = ({ userInfo }) => { // va chercher userInfo dans App.js qui 
             ) : (
                 <p>Vous n'avez pas de compte</p>
             )}
-
+            <Link to="/listeCommandes">
+                <button type="button" className="infosCompte-button">Liste de commandes</button>
+            </Link>
             <Link to="/creerCompte">
                 <button type="button" className="infosCompte-button">Modifier</button>
             </Link>

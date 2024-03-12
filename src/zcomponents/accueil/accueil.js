@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
 import { Button, Icon, Message, MessageHeader, Segment, Grid, GridColumn, Divider, Form, FormInput } from 'semantic-ui-react';
-import logo from './logoVit.webp';
-import './accueil.css';
+import logo from '../../images/logoVit.webp';
+import '../../style/accueil.css';
 import ContactInfo from './contactInfo';
+
 
 const ConnexionOuInscription = () => (
     <Segment placeholder>
@@ -42,7 +43,12 @@ const Accueil = () => {
             <div className="accueil-containerAccueil">
                 <br />
                 <br />
-                <img className="miniLogo" src={logo} alt="Pharmacie Logo" />
+                <img style={
+                    {
+                        width: '120px',
+                        height: '120px'
+                    }}
+                    src={logo} alt="Pharmacie Logo" />
                 <h1 className="accueil-title">Vitamine BonLeBon</h1>
                 <br />
                 <br />
@@ -56,6 +62,12 @@ const Accueil = () => {
 
                     <br />
                     <br />
+                    <Link to="/jeux">
+                        <button className="accueil-button">
+                            <Icon name="game" />
+
+                            Jeux</button>
+                    </Link>
                     <ContactInfo onClose={handleContactInfoClick} />
                     <Link to="/catalogue">
                         <button className="accueil-button">Catalogue</button>
@@ -65,9 +77,6 @@ const Accueil = () => {
                         <button className="accueil-button">Concours</button>
                     </Link>
 
-                    <Link to="/jeux">
-                        <button className="accueil-button">Jeux</button>
-                    </Link>
                     <Link to="/AccueilSpanish">
 
                         <button className="accueil-button">Español</button>

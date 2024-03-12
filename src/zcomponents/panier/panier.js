@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./panier.css"; // Assurez-vous d'importer le fichier CSS pour le style
-import logo from "./Pharmacien-logo-867FAF3378-seeklogo.com.png";
+
+import "../../style/panier.css";
+import logo from '../../images/logoVit.webp';
 
 
 // Composant Panier
@@ -38,7 +39,7 @@ const Panier = ({ retournerAuCatalogue, passerALaCaisse }) => {
     <div className="containerPanier">
       <div className="panier">
         <Link to="/">
-          <img className="miniLogo" src={logo} alt="Pharmacie Logo" />
+          <img className="logoPanier" src={logo} alt="Pharmacie Logo" />
         </Link>
         <h2>Panier</h2>
         {/* Liste des articles dans le panier */}

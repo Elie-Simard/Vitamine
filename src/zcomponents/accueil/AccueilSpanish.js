@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
 import { Button, Icon, Message, MessageHeader, Segment, Grid, GridColumn, Divider, Form, FormInput } from 'semantic-ui-react';
-import logo from './logoVit.webp';
-import './accueil.css';
+import logo from '../../images/logoVit.webp';
+import '../../style/accueil.css';
 import ContactInfo from './contactInfo';
 
 const ConnexionOuInscription = () => (
@@ -42,7 +42,12 @@ const AccueilSpanish = () => {
             <div className="accueil-containerAccueil">
                 <br />
                 <br />
-                <img className="miniLogo" src={logo} alt="Logo de la farmacia" />
+                <img style={
+                    {
+                        width: '120px',
+                        height: '120px'
+                    }}
+                    src={logo} alt="Pharmacie Logo" />
                 <h1 className="accueil-title">Vitamina BuenoElBueno</h1>
                 <br />
                 <br />
@@ -61,7 +66,7 @@ const AccueilSpanish = () => {
                     </Link>
                     <Link to="/">
                         <button className="accueil-button">Français</button>
-                    </Link>  
+                    </Link>
                 </div>
                 <br />
                 <br />

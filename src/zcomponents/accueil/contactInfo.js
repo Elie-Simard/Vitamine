@@ -1,7 +1,7 @@
 // ContactInfo.js
 import React from 'react';
 import { Popup, Button, Icon } from 'semantic-ui-react';
-import './accueil.css';
+import '../../style/accueil.css';
 
 const ContactInfo = ({ onClose }) => (
     <Popup

@@ -4,7 +4,7 @@
 body.creerCompteBody {
     margin: 0;
     padding: 0;
-    background: url('./blank.jpeg');
+    background: url('../../public/images/blank.jpeg');
     display: flex;
     justify-content: center;
     align-items: center;

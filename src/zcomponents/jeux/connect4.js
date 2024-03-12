@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Typography } from '@mui/material';
 
+//components qui permet de jouer au jeu de connect4
+
 const ROWS = 6;
 const COLS = 7;
 const PLAYER1_COLOR = '#FF0000'; // Red
@@ -147,7 +149,16 @@ const Connect4 = () => {
                     </div>
                 ))}
             </div>
-            <Button onClick={resetGame} variant="contained" color="primary" style={{ marginTop: '5px', marginBottom: '5px' }}>Réinitialiser la partie</Button>
+            <br />
+            <Button onClick={resetGame} variant="contained" color="primary" style={{
+                marginTop: '5px',
+                marginBottom: '5px',
+                padding: '10px',
+                maxWidth: '500px', // Utiliser maxWidth au lieu de width pour une meilleure responsivité
+                margin: '0 auto', // Ajout pour centrer le conteneur dans la vue
+                display: 'flex', // S'assure que les enfants sont flexibles
+                flexDirection: 'column'
+            }}>Réinitialiser la partie</Button>
             <Dialog open={openDialog} onClose={() => setOpenDialog(false)}>
                 <DialogTitle>Fin de la partie</DialogTitle>
                 <DialogContent>

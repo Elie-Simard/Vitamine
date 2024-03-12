@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "./Pharmacien-logo-867FAF3378-seeklogo.com.png";
-import "./checkout.css";
 
+import logo from '../../images/logoVit.webp';
+import "../../style/checkout.css";
 
 const Checkout = () => {
   // State pour les informations du panier
@@ -25,8 +25,12 @@ const Checkout = () => {
     <div className="containerCheckout">
       <div className="checkout">
         <Link to="/">
-          <img className="miniLogo" src={logo} alt="Pharmacie Logo" />
-        </Link>
+          <img style={
+            {
+              width: '120px',
+              height: '120px'
+            }}
+            src={logo} alt="Pharmacie Logo" />        </Link>
         <h2>Checkout</h2>
 
         {/* Résumé des articles */}

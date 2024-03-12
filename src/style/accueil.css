@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('./blank.jpeg');
+    background: url('../../public/images/blank.jpeg');
 }
 
 /* body de accueil (image de fond) */
@@ -38,8 +38,11 @@ body {
 }
 
 .accueil-logo {
-    max-width: 300px;
-    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    align-items: center;
+    margin: 0 auto 20px;
 }
 
 .accueil-infos {

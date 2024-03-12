@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Box from '@mui/material/Box';
-import allergieImg from './allergie.avif';
-
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import './creerCompte.css';
+
+import allergieImg from '../../images/allergie.avif';
+import '../../style/infosCompte.css';
 
 const AllergiesInfos = ({ onUpdateUserInfo }) => { //ON MET UN MAJUSCULE A AllergiesInfos vs le nom du fichier parce que c'est un composant et c'est une convention de nommage
     const [allergies, setAllergies] = useState('');
@@ -23,7 +23,6 @@ const AllergiesInfos = ({ onUpdateUserInfo }) => { //ON MET UN MAJUSCULE A Aller
                 autoComplete="off"
                 className="containerCreerCompte"
             >
-                {/* <img src={allergieImg} alt="Pharmacie Logo" /> //plz change size to 60% of the original size */}
                 <img src={allergieImg} alt="Pharmacie Logo" style={{ width: '90%' }} />
                 <form onSubmit={handleSubmit}>
                     <TextField

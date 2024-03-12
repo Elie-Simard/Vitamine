@@ -4,12 +4,11 @@
     justify-content: center;
     align-items: center;
     height: 95vh;
-    /* Hauteur de la vue */
     text-align: center;
 }
 
 .panier {
-    height: 600px;
+    height: 660px;
     /* Hauteur du panier */
     width: 600px;
     /* Largeur du panier */
@@ -52,7 +51,7 @@
 .panier button {
     margin-left: 10px;
     /* Espacement à gauche */
-    background-color: #0D9276;
+    background-color: #2e70c6;
     /* Couleur de fond du bouton */
     color: #fff;
     /* Couleur du texte du bouton */
@@ -66,11 +65,9 @@
 
 .miniLogo {
     width: 50px;
-    /* Largeur du logo */
     height: 50px;
-    /* Hauteur du logo */
     display: block;
-    /* Afficher en tant que bloc */
+    /* Block = élément qui prend toute la largeur disponible */
     margin: 0 auto 20px;
     /* Marge en bas et centrage horizontal */
 }
@@ -96,6 +93,15 @@
     /* Bordures arrondies */
     text-align: center;
     /* Centrage du texte */
+}
+
+.logoPanier {
+    width: 80px;
+    height: 80px;
+    display: block;
+    /* Block = élément qui prend toute la largeur disponible */
+    margin: 0 auto 20px;
+    /* Marge en bas et centrage horizontal */
 }
 
 .total {

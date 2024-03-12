@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from './logoVit.webp';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
-import './creerCompte.css';
+import logo from '../../images/logoVit.webp';
+import '../../style/creerCompte.css';
 
 const CreerCompte = ({ onAccountCreation }) => {
     const [user, setUser] = useState({
@@ -18,7 +18,7 @@ const CreerCompte = ({ onAccountCreation }) => {
     });
     const [compteCree, setCompteCree] = useState(false); // pour afficher le message de confirmation
 
-    const handleInputChange = (e) => { 
+    const handleInputChange = (e) => {
         const { name, value } = e.target;
         setUser({ ...user, [name]: value });
     };
@@ -83,13 +83,13 @@ const CreerCompte = ({ onAccountCreation }) => {
                         name="phone"
                         margin="normal"
                     />
-                        <TextField
-                            label="Allergies"
-                            placeholder="Allergies"
-                            onChange={handleInputChange}
-                            name="allergies"
-                            margin="normal"
-                        />
+                    <TextField
+                        label="Allergies"
+                        placeholder="Allergies"
+                        onChange={handleInputChange}
+                        name="allergies"
+                        margin="normal"
+                    />
                     <Button type="submit" variant="contained" color="primary" onClick={handleCreateAccount}>
                         Confirmer
                     </Button>
