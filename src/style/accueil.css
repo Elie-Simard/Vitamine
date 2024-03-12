@@ -5,6 +5,8 @@ body {
     margin: 0;
     padding: 0;
     background: url('../../public/images/blank.jpeg');
+        /* pour ne pas repeter l'image */
+            background-size: cover;
 }
 
 /* body de accueil (image de fond) */
@@ -22,22 +24,22 @@ body {
 .accueil-container {
     background-color: #BBE2EC;
     display: flex;
-    border-radius: 30px;
-    padding: 20px;
-    text-align: center;
-
-
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    max-width: 150%;
-    width: 300px;
+    border-radius: 30px;
+        padding: 20px;
+        max-width: 90%;
+        /* Ajusté pour la réactivité */
     margin: auto;
-    height: 50vh;
+    min-height: 50vh;
+        /* Utilisez min-height */
     text-align: center;
 }
 
+
 .accueil-logo {
+    max-width: 100%;
     width: 100px;
     height: 100px;
     display: block;
@@ -124,12 +126,25 @@ body {
 .accueil-addon-product {
     width: 150px;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #06864a;
     border-radius: 5px;
     text-align: center;
     margin-top: 10px;
 }
+.accueil-game-button {
 
+    border: none;
+        color: #06864a !important;
+        padding: 15px 32px !important;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px !important;
+        display: inline-block;
+        font-size: 16px;
+        height: 50px;
+        margin: 10px 15px !important;
+        cursor: pointer;
+    }
 .accueil-social-buttons button {
     margin: 5px;
     padding: 1px 1px;

@@ -83,10 +83,10 @@ const Accueil = () => {
                 <br />
                 <div style={{ textAlign: 'center' }}>
                     <Link to="/jeux">
-                        <button className="accueil-button">
+                        <Button className="accueil-button">
                             <Icon name="game" />
-
-                            Jeux</button>
+                            Jeux
+                        </Button>
                     </Link>
                 </div>
                 <br />

@@ -8,11 +8,11 @@ import bonhomme3 from './bonhomme3.jpeg';
 import bonhomme4 from './bonhomme4.jpeg';
 import bonhomme5 from './bonhomme5.jpeg';
 import bonhomme6 from './bonhomme6.jpeg';
+import bonhomme7 from './bonhomme7.jpeg';
 import NavBar from "../../navBar";
 
 // Mettre toutes les images importées dans un tableau
-const bonhommes = [bonhomme0, bonhomme1, bonhomme2, bonhomme3, bonhomme4, bonhomme5, bonhomme6];
-
+const bonhommes = [bonhomme0, bonhomme1, bonhomme2, bonhomme3, bonhomme4, bonhomme5, bonhomme6, bonhomme7];
 function Pendu() {
     const [mot, setMot] = useState("bonjour");
     const [lettresDevinees, setLettresDevinees] = useState([]);

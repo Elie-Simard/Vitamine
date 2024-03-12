@@ -1,8 +1,5 @@
 import React from 'react';
-
 import { Grid, Typography } from '@mui/material';
-
-
 
 import ConcourCard from './concourCard';
 import NavBar from '../navBar';
