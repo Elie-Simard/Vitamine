@@ -1,6 +1,6 @@
 // App.js
 import React, { useState, useEffect } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import CreerCompte from './zcomponents/creerCompte/creerCompte';
 import Accueil from './zcomponents/accueil/accueil';
@@ -17,6 +17,7 @@ import Connect4 from './zcomponents/jeux/connect4';
 import Jeux from './zcomponents/jeux/jeux';
 import Jeu1 from './zcomponents/jeux/jeu1';
 import Pendu from './zcomponents/jeux/pendus/Pendu';
+
 
 
 function App() {
@@ -50,6 +51,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" exact={true} element={<Accueil />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+
 
         <Route
           path="/creerCompte"
