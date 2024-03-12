@@ -62,12 +62,6 @@ const Accueil = () => {
 
                     <br />
                     <br />
-                    <Link to="/jeux">
-                        <button className="accueil-button">
-                            <Icon name="game" />
-
-                            Jeux</button>
-                    </Link>
                     <ContactInfo onClose={handleContactInfoClick} />
                     <Link to="/catalogue">
                         <button className="accueil-button">Catalogue</button>
@@ -81,12 +75,20 @@ const Accueil = () => {
 
                         <button className="accueil-button">Español</button>
                     </Link>
-
+                    <br />
 
                 </div>
+
                 <br />
                 <br />
-                <br />
+                <div style={{ textAlign: 'center' }}>
+                    <Link to="/jeux">
+                        <button className="accueil-button">
+                            <Icon name="game" />
+
+                            Jeux</button>
+                    </Link>
+                </div>
                 <br />
                 <br />
                 <br />
@@ -121,7 +123,7 @@ const Accueil = () => {
                     <br />
 
                     <div style={{ textAlign: 'center' }}>
-                        © 2024 Vitamine BonLeBon
+                        © 2024 Vitamine BonLeBon - Élie Simard
                     </div>
                 </div>
             </div>

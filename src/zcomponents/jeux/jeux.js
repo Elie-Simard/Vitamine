@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const Jeux = () => {
     return (
         <Container textAlign="center" style={{ marginTop: '20px' }}>
+            <br />
             <NavBar />
             <br />
             <br />
@@ -17,10 +18,13 @@ const Jeux = () => {
                 </Button>
             </Link>
 
+
+            <Link to="/pendu">   
             <Button icon labelPosition='left' color="red" style={{ margin: '10px' }}>
                 <Icon name="puzzle" />
                 Le Pendu
             </Button>
+            </Link>
 
         </Container>
     );

@@ -12,13 +12,14 @@ const Jeu1 = () => {
 
 
 
+            <NavBar />
             <div style={{ backgroundColor: 'white', padding: '10px', maxWidth: '1000px', margin: '0 auto', minHeight: '100vh' }}>
-                <NavBar />
                 <Grid container justifyContent="center" style={{ marginTop: '20px', marginBottom: '20px' }}>
                     <Typography variant="h4" component="h1" style={{ fontFamily: 'Comic Sans MS', fontWeight: 'bold' }}>Connecte 4</Typography>
                 </Grid>
                 <Grid container justifyContent="center" alignItems="center" style={{
-                    backgroundColor: 'orange',
+                    backgroundColor: '#19A7CE',
+                    borderRadius: '10px',
                     padding: '10px',
                     maxWidth: '500px', // Utiliser maxWidth au lieu de width pour une meilleure responsivité
                     margin: '0 auto', // Ajout pour centrer le conteneur dans la vue

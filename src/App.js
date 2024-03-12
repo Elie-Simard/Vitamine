@@ -4,6 +4,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import CreerCompte from './zcomponents/creerCompte/creerCompte';
 import Accueil from './zcomponents/accueil/accueil';
+import AccueilSpanish from './zcomponents/accueil/AccueilSpanish';
 import InfosCompte from './zcomponents/infosCompte/infosCompte';
 import Catalogue from './zcomponents/catalogue/catalogue';
 import ListeCommandes from './zcomponents/listeCommandes/listeCommandes';
@@ -15,7 +16,8 @@ import Concour1 from './zcomponents/concours/concour1';
 import Connect4 from './zcomponents/jeux/connect4';
 import Jeux from './zcomponents/jeux/jeux';
 import Jeu1 from './zcomponents/jeux/jeu1';
-import AccueilSpanish from './zcomponents/accueil/AccueilSpanish';
+import Pendu from './zcomponents/jeux/pendus/Pendu';
+
 
 function App() {
 
@@ -68,6 +70,7 @@ function App() {
         <Route exact={true} path="/jeux" element={<Jeux />} />
         <Route exact={true} path="/jeu1" element={<Jeu1 />} />
         <Route exact={true} path="/AccueilSpanish" element={<AccueilSpanish />} />
+        <Route exact={true} path="/pendu" element={<Pendu />} />
       </Routes>
     </Router>
   );
